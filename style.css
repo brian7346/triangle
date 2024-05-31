@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 
-#triangleForm input[type="number"] {
+#triangleForm input {
   display: block;
   width: 100%;
   padding: 10px;
