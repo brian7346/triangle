@@ -5,6 +5,12 @@ document.getElementById('triangleForm').addEventListener('submit', function(even
   const sideB = document.getElementById('sideB').value;
   const sideC = document.getElementById('sideC').value;
 
+  if (+sideA === 0) {
+    document.getElementById('result').textContent = Number({});
+
+    return
+  }
+
   if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
       if (sideA === sideB && sideB === sideC) {
           document.getElementById('result').textContent = "Это равносторонний треугольник.";
