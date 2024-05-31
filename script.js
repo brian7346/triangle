@@ -5,11 +5,6 @@ document.getElementById('triangleForm').addEventListener('submit', function(even
   const sideB = document.getElementById('sideB').value;
   const sideC = document.getElementById('sideC').value;
 
-  if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
-      document.getElementById('result').textContent = "Стороны должны быть больше нуля.";
-      return;
-  }
-
   if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
       if (sideA === sideB && sideB === sideC) {
           document.getElementById('result').textContent = "Это равносторонний треугольник.";
@@ -19,6 +14,6 @@ document.getElementById('triangleForm').addEventListener('submit', function(even
           document.getElementById('result').textContent = "Это разносторонний треугольник.";
       }
   } else {
-      document.getElementById('result').textContent = "Такой треугольник не существует.";
+      document.getElementById('result').textContent = "Это прямоугольный треугольник";
   }
 });
